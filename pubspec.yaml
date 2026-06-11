@@ -1,0 +1,36 @@
+name: moradabad_news
+description: Hindi-first local news app for Moradabad and nearby districts.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cached_network_image: ^3.4.1
+  cloud_functions: ^5.2.0
+  cloud_firestore: ^5.6.0
+  firebase_auth: ^5.3.4
+  firebase_core: ^3.9.0
+  firebase_messaging: ^15.1.6
+  flutter_riverpod: ^2.6.1
+  google_fonts: ^6.2.1
+  google_sign_in: ^6.2.2
+  http: ^1.2.2
+  intl: ^0.20.2
+  share_plus: ^10.1.2
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/translations/

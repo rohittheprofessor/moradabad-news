@@ -1,0 +1,23 @@
+{
+  "name": "moradabad-news-functions",
+  "private": true,
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "fetch:local": "node scripts/fetch-real-news.mjs",
+    "serve": "npm run build && firebase emulators:start --only functions,firestore",
+    "deploy": "npm run build && firebase deploy --only functions",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.1",
+    "firebase-functions": "^6.1.1",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
